@@ -23,7 +23,7 @@ python CMC_CSVGeneration.py --api-key INSERT-YOUR-API-KEY-HERE
 
 All accepted parmeters are: 
 
-* api-key - The API key that you would like to use to authenticate with the API __Required__
+* api-key - The API key that you would like to use to authenticate with the API - __Required__
 * start - The result that the API's response should start with [1 - 5000] - Default = 1 
 * limit - The number of data points that should be returned [1 - 5000] - Default = 100
 * convert - Comma seperated string of FIAT symbols that you would like the results converted to - Default = USD
