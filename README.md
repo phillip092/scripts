@@ -27,4 +27,4 @@ All accepted parmeters are:
 * start - The result that the API's response should start with [1 - 5000] - Default = 1 
 * limit - The number of data points that should be returned [1 - 5000] - Default = 100
 * convert - Comma seperated string of FIAT symbols that you would like the results converted to - Default = USD
-* output-file - A name for the output CSV that will be generated (if a directory is included, it must already exist) - Default = CMC_MarketDataExport_YYYYMMDD-HHMMSS.csv
+* output-file - A name for the output CSV that will be generated (if a directory is included, it must already exist) - Default = CMC_MarketDataExport_yyyymmdd-hhmmss.csv
