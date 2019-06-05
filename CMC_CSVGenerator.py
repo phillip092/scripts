@@ -61,7 +61,7 @@ def generateCSV(data, file_name):
         count += 1; 
     
     headers = generateCSVHeaders(quotes)
-    f = csv.writer(open(file_name, "wb+"))
+    f = csv.writer(open(file_name, "w")) if sys.version_info >= (3, 0) else csv.writer(open(file_name, "wb+"))
     f.writerow(headers)
     f.writerows(csv_data)
 
@@ -144,7 +144,7 @@ def getAPIData(api_key, params):
     if response.status_code == 200:
         resp_data = data.get("data", None)
     if not resp_data:
-        resp_error =  "No Data recieved from the API"
+        resp_error =  "No Data recieved from the API \n"
         resp_error += "HTTP Status Code: %s \n" % str(response.status_code)
         resp_error += "Credits Used: %s \n" % str(data["status"].get("credit_count", "Unknown"))
         resp_error += "Error Message (if avaiable): %s" % (data["status"].get("error_message", "Unknown"))
