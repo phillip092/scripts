@@ -7,7 +7,7 @@ A Simple Python script to generate a CSV file with results pulled from CoinMarke
 
 #### Prerequisites
 
-Requires python requests library
+Requires python requests library. You can install the library using pip with the following command:
 
 ```
 pip install requests
